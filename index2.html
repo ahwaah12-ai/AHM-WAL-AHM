@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <title>Programming Languages</title>
+  <style>
+    body {
+      background-color: #6c757d;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 30px;
+    }
+
+    .item img {
+      width: 250px;
+      height: 300px;
+      box-shadow: 1px 1px 10px black;
+      border-radius: 10px;
+      transition: all 0.5s ease;
+      transform: rotate(5deg);
+    }
+
+    .item img:hover {
+      transform: rotate(0deg) translateY(-15px);
+    }
+
+    .item h2 {
+      font-weight: bolder;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 255, 0.5);
+      padding: 25px;
+      border-radius: 15px;
+      line-height: 1.8;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .back-btn {
+      margin: 30px auto;
+      display: inline-block;
+      padding: 10px 40px;
+      border-radius: 25px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 576px) {
+      .item img {
+        width: 150px;
+        height: 180px;
+      }
+
+      .description {
+        font-size: 0.95rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="item">
+    <h2>Programming Languages</h2>
+  </div>
+
+  <div class="item" id="icons">
+    <img src="icon-1.png" alt="HTML">
+    <img src="icon-2.png" alt="CSS">
+    <img src="icon-3.png" alt="JavaScript">
+    <img src="icon-4.png" alt="Python">
+    <img src="icon-5.png" alt="Java">
+    <img src="icon-6.png" alt="C++">
+  </div>
+
+  <p class="description">
+    HTML, CSS, and JavaScript are the three core programming languages that form the foundation of web development.
+    HTML (HyperText Markup Language) provides the structure of a webpage, defining elements such as headings,
+    paragraphs, images, and links. CSS (Cascading Style Sheets) is used to style and design the page, controlling
+    colors, fonts, layouts, and overall visual presentation. JavaScript adds interactivity and dynamic behavior,
+    allowing developers to create features like animations, form validation, and interactive menus. Together, these
+    languages work in harmony to build modern websites that are both visually appealing and highly functional,
+    making them essential skills for anyone interested in creating digital experiences.
+  </p>
+
+  <a href="index.html" class="btn btn-primary back-btn">Back</a>
+
+  <script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
